@@ -59,6 +59,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 models = []
 
 for i in os.listdir(args.r):
+    print(i)
+    
     if i.endswith("%d_model.pkl" % (args.epochs-1)):   # 500_model.pkl
         models.append(os.path.join(args.r, i))
 
