@@ -58,7 +58,7 @@ cudnn.benchmark = True
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 models = []
 
-ls(args.r)
+
 for i in os.listdir(args.r):
     print(i)
     
